@@ -21,6 +21,8 @@ const generateAnswer = async (prompt) => {
 
 const App = () => {
   console.log(process.env.REACT_APP_API_KEY);
+  console.log(process.env);
+
   const [inputPost, setInputPost] = useState("");
   const [copiedOutput, setCopiedOutput] = useState("");
   // const [inputLength, setInputLength] = useState(0);
