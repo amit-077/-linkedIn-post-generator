@@ -1,0 +1,30 @@
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 680px) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 0.6rem;
+  }
+
+  .mainDiv {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .copyIcon {
+    display: none;
+  }
+}
