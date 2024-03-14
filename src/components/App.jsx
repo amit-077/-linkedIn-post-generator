@@ -5,7 +5,7 @@ import axios from "axios";
 import History from "./History";
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.REACT_APP_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 const generateAnswer = async (prompt) => {
