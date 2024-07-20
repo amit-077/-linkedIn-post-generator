@@ -5,7 +5,7 @@ import axios from "axios";
 import History from "./History";
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAI = new GoogleGenerativeAI("");
+const genAI = new GoogleGenerativeAI(process.env.REACT_APP_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 const generateAnswer = async (prompt) => {
@@ -146,7 +146,7 @@ const App = () => {
         </Box>
       </Box>
       {/* Input - Output section */}
-      <Box mt={"2.5rem"} mb={"2rem"}>
+      <Box mt={"2.5rem"}>
         <HStack spacing={"2.5rem"} wrap={"wrap"} justifyContent={"center"}>
           <Box
             w={"20rem"}

@@ -20,7 +20,7 @@ const History = ({ renderHistoryData }) => {
   }
 
   return (
-    <Box mt={"3rem"} w={"auto"}>
+    <Box mt={"3rem"} w={"auto"} pb={"1rem"}>
       <Box bgColor={"#f2f2f2"} pt={"0.7rem"} pb={"0.7rem"} pl={"1rem"}>
         <Text fontSize={"1.1rem"} fontWeight={600}>
           <i class="fa-solid fa-clock-rotate-left"></i> History
@@ -33,6 +33,7 @@ const History = ({ renderHistoryData }) => {
             <Box
               cursor={"pointer"}
               bgColor={"#f7f7f7"}
+              borderRadius={'0.5rem'}
               _hover={{ bgColor: "#f1f1f1" }}
               w={"100%"}
               pl={"1rem"}
