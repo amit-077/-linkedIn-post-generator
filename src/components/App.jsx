@@ -119,8 +119,8 @@ const App = () => {
         >
           <Text fontSize={"1.1rem"} color={"#fff"}>
             <a
-              href="https://github.com/amit-077?tab=repositories"
-              target="_blank"
+              //href="https://github.com/amit-077?tab=repositories"
+              //target="_blank"
             >
               GitHub
             </a>
